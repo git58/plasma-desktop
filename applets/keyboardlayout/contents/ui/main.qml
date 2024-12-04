@@ -76,6 +76,26 @@ PlasmoidItem {
 
                 visible: !countryCode.visible && Plasmoid.configuration.displayStyle === 2
 
+                if(countryCode.text = "ru")
+                {
+                    Behavior on text {
+                        OpacityAnimator on opacity{
+                            from: 0;
+                            to: 1;
+                            duration: 100
+                    }
+                }
+
+                if(countryCode.text = "ru")
+                {
+                    icon {
+                        OpacityAnimator on opacity{
+                            from: 0;
+                            to: 1;
+                            duration: 100
+                    }
+                }
+
                 text: countryCode.text
                 icon: flag
             }
